@@ -7,6 +7,151 @@
   <title>DigitVibe Consulting</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
+    1<!DOCTYPE html>
+2<html lang="id">
+3<head>
+4    <meta charset="UTF-8">
+5    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+6    <title>DigitVibe Consulting</title>
+7    <style>
+8        /* Basic Reset */
+9        body, h1, h2, h3, p, div { margin: 0; padding: 0; }
+10
+11        /* Body Styling */
+12        body {
+13            font-family: 'Arial', sans-serif;
+14            line-height: 1.6;
+15        }
+16
+17        /* Header with Parallax Effect */
+18        .parallax {
+19            background-image: url('https://www.example.com/background.jpg'); /* Ganti dengan URL gambar latar belakang Anda */
+20            height: 100vh;
+21            background-attachment: fixed;
+22            background-position: center;
+23            background-repeat: no-repeat;
+24            background-size: cover;
+25            display: flex;
+26            justify-content: center;
+27            align-items: center;
+28            color: white;
+29        }
+30
+31        .content {
+32            text-align: center;
+33        }
+34
+35        .content h1 {
+36            font-size: 3em;
+37        }
+38
+39        .content p {
+40            font-size: 1.2em;
+41        }
+42
+43        /* Slider Styling */
+44        #slider {
+45            width: 100%;
+46            overflow: hidden;
+47        }
+48
+49        .slider-container {
+50            display: flex;
+51            transition: transform 1s ease-in-out;
+52        }
+53
+54        .slider-item {
+55            flex: 0 0 100%;
+56            text-align: center;
+57            padding: 100px 0;
+58            font-size: 2em;
+59            background-color: #333;
+60            color: white;
+61        }
+62
+63        /* Team Section */
+64        #team {
+65            padding: 40px 20px;
+66            background-color: #f9f9f9;
+67        }
+68
+69        .team-container {
+70            display: grid;
+71            grid-template-columns: repeat(3, 1fr);
+72            gap: 20px;
+73        }
+74
+75        .team-card {
+76            background: #fff;
+77            text-align: center;
+78            padding: 20px;
+79            border-radius: 10px;
+80            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+81        }
+82
+83        .team-card img {
+84            width: 150px;
+85            height: 150px;
+86            border-radius: 50%;
+87            margin-bottom: 15px;
+88        }
+89
+90        .team-card h3 {
+91            margin-bottom: 10px;
+92        }
+93
+94        .team-card p {
+95            color: #555;
+96        }
+97
+98        /* Navigation Button (Two Line Menu) */
+99        #menu-toggle {
+100            position: fixed;
+101            top: 20px;
+102            right: 20px;
+103            width: 40px;
+104            height: 40px;
+105            cursor: pointer;
+106            z-index: 1000;
+107        }
+108
+109        #menu-toggle div {
+110            width: 30px;
+111            height: 5px;
+112            background-color: #333;
+113            margin: 6px 0;
+114            transition: 0.3s;
+115        }
+116
+117        /* Responsive Styling */
+118        @media (max-width: 768px) {
+119            .team-container {
+120                grid-template-columns: 1fr;
+121            }
+122        }
+123    </style>
+124</head>
+125<body>
+126
+127    <!-- Navigation Menu -->
+128    <div id="menu-toggle">
+129        <div></div>
+130        <div></div>
+131        <div></div>
+132    </div>
+133
+134    <!-- Parallax Header Section -->
+135    <section class="parallax">
+136        <div class="content">
+137            <h1>Selamat datang di DigitVibe Consulting</h1>
+138            <p>Konsultan Bisnis yang membantu mengembangkan strategi dan solusi terbaik untuk bisnis Anda</p>
+139        </div>
+140    </section>
+141
+142    <!-- Auto-Slider Section -->
+143    <section id="slider">
+144        <div class="slider-container">
+145            <div class="slider-item">Konsultasi Bisnis yang Tepat untuk Masa Depan Bisnis Anda</div>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Poppins', sans-serif;
